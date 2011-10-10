@@ -7,7 +7,5 @@ Auth::Application.routes.draw do
   
   resources :users
   resources :sessions
-  
-  #Routes for Omni
-  match "auth/:provider/callback" => "sessions#omni"
+
 end
